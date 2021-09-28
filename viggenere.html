@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./CSS/masterstyle.css">
+        <title>Cifrado</title>
+
+    </head>
+    
+    <body>
+        
+        <main>
+            <div class="main-container">
+                <h1>Cifrado de Vigenére</h1>
+                <h2>Mensaje</h2>
+                <textarea id="vtext" rows="3" cols="40" class="txtarea"></textarea>
+                <h2>Llave</h2>
+                <textarea id="llave" rows="2" cols="40" class="txtarea"></textarea>
+                <p> <input type="button" class="BCifrar" value="CIFRAR" onclick="RebuildString(Encriptar(true))" >
+                    <input type="button" class="BCifrar" value="DESCIFRAR" onclick="RebuildString(Encriptar(false))" > </p>
+                <br>
+                <textarea id="vresul" readonly rows="3" cols="40" class="txtarea"></textarea>
+            </div>
+        </main>
+        
+        <footer>
+            <h3>Creado por:</h3>
+            <p>De Jesus Pacheco Yahir</p>
+        </footer>
+        
+        <header>
+                <section class="BNav">
+                    <a href="index.html">Inicio</a>
+                </section>
+                <section class="BNav">
+                    <a href="./cesar.html">Cifrado De César</a>
+                </section>
+                <section class="BNav">
+                    <a href="./viggenere.html">Cifrado de Vigenére</a>
+                </section>
+        </header>
+
+        <script src="./js/viggenere.js"></script>
+
+    </body>
+
+</html>
